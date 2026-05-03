@@ -25,7 +25,8 @@ archivesBaseName = "Immersive Vehicles"
 //java.toolchain.languageVersion = JavaLanguageVersion.of(8)
 compileJava {
     options.compilerArgs << "-Xlint:deprecation" << "-Xlint:unchecked"
-		options.release = 8
+		sourceCompatibility = "1.8"
+		targetCompatibility = "1.8"
 }
 
 repositories {

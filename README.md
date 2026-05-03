@@ -98,9 +98,9 @@ Need more help with IDEA? Ask Elephant_1214#3698 in the Discord server.
 
    If you see the above, go into "Immersive Vehicles" > "Tasks" > "forgegradle runs" and click on `genVSCodeRuns`.
 
-4. If you want to test your changes on the client or the server, in the Gradle tab go to `mcinterfaceforge1122` (1.12.2) or `mcinterfaceforge1165` (1.16.5) > "Tasks" > "forgegradle runs" and click on `runClient` or `runServer`
+4. If you want to test your changes on the client or the server, in the Gradle tab go to `mcinterfaceforge1122` (1.12.2) > "Tasks" > "forgegradle runs" and click on `runClient` or `runServer`
 
-5. When you're ready to build the mod, in the Gradle tab go to `mcinterfaceforge1122` (1.12.2) or `mcinterfaceforge1165` (1.16.5) > "Tasks" > "build" and click on `build`
+5. When you're ready to build the mod, in the Gradle tab go to `mcinterfaceforge1122` (1.12.2) > "Tasks" > "build" and click on `build`
 
 #### Other
 

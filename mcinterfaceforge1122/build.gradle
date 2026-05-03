@@ -23,7 +23,8 @@ archivesBaseName = project.archive_name
 //java.toolchain.languageVersion = JavaLanguageVersion.of(8)
 compileJava {
     options.compilerArgs << "-Xlint:deprecation" << "-Xlint:unchecked"
-		options.release = 8
+		sourceCompatibility = "1.8"
+		targetCompatibility = "1.8"
 }
 
 //Minecraft mappings and run configs.
@@ -49,8 +50,6 @@ minecraft {
 }
 
 repositories {
-    //JEI
-    maven { url = "https://dvs1.progwml6.com/files/maven/" }
 }
 
 //Configuration that holds jars to include in the jar
@@ -66,14 +65,6 @@ dependencies {
 		
 		//Core to use.
     embed(project(":mccore"))
-
-
-    //Compile against the JEI API but do not include it at runtime
-    compileOnly fg.deobf("mezz.jei:${project.jei_api_version}")
-    //At runtime, use the full JEI jar
-    //Disabled as Access Transformers don"t work on FG 3.0 runtimes despite them saying they do.
-    //Not a huge issue, as it just prevents using JEI in-dev, and we already have it working so don"t really need to test.
-    //runtimeOnly fg.deobf("mezz.jei:${project.jei_run_version}")
 }
 
 jar {
